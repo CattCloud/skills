@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Desarrollador Full Stack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .skill-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .frontend { border-left-color: #61dafb; }
+        .backend { border-left-color: #68d391; }
+        .database { border-left-color: #f6ad55; }
+        .tools { border-left-color: #9f7aea; }
+        .modern { border-left-color: #fc8181; }
+        .methodologies { border-left-color: #4fd1c7; }
+        
+        .skill-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+        
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tech-tag {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .skill-description {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-top: 1rem;
+        }
+        
+        .experience-summary {
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .experience-summary h2 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Desarrollador Full Stack</h1>
+            <p>Skills adquiridos durante mi formación en bootcamp intensivo</p>
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-card frontend">
+                <div class="icon">⚛️</div>
+                <h3>Frontend Moderno</h3>
+                <div class="tech-list">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript ES6+</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">Responsive Design</span>
+                </div>
+                <div class="skill-description">
+                    Desarrollo de interfaces dinámicas con componentes reutilizables, manejo de estado, hooks y routing avanzado.
+                </div>
+            </div>
+            
+            <div class="skill-card backend">
+                <div class="icon">🔧</div>
+                <h3>Backend & APIs</h3>
+                <div class="tech-list">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">MVC Pattern</span>
+                    <span class="tech-tag">Middleware</span>
+                </div>
+                <div class="skill-description">
+                    Construcción de servidores robustos y APIs RESTful siguiendo arquitecturas escalables y buenas prácticas.
+                </div>
+            </div>
+            
+            <div class="skill-card database">
+                <div class="icon">🗄️</div>
+                <h3>Bases de Datos</h3>
+                <div class="tech-list">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Prisma ORM</span>
+                    <span class="tech-tag">Database Design</span>
+                </div>
+                <div class="skill-description">
+                    Diseño y gestión de bases de datos NoSQL y SQL con relaciones complejas y consultas optimizadas.
+                </div>
+            </div>
+            
+            <div class="skill-card modern">
+                <div class="icon">🔥</div>
+                <h3>Stack Moderno</h3>
+                <div class="tech-list">
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">OAuth2</span>
+                    <span class="tech-tag">NextAuth.js</span>
+                </div>
+                <div class="skill-description">
+                    Desarrollo con tipado estático, renderizado híbrido y sistemas de autenticación empresariales.
+                </div>
+            </div>
+            
+            <div class="skill-card tools">
+                <div class="icon">🛠️</div>
+                <h3>Herramientas & DevOps</h3>
+                <div class="tech-list">
+                    <span class="tech-tag">Git/GitHub</span>
+                    <span class="tech-tag">VS Code</span>
+                    <span class="tech-tag">Terminal/CLI</span>
+                    <span class="tech-tag">Cloud Deployment</span>
+                    <span class="tech-tag">AI Tools</span>
+                </div>
+                <div class="skill-description">
+                    Flujo de trabajo profesional con control de versiones, despliegue en la nube e integración de IA.
+                </div>
+            </div>
+            
+            <div class="skill-card methodologies">
+                <div class="icon">🎯</div>
+                <h3>Metodologías</h3>
+                <div class="tech-list">
+                    <span class="tech-tag">Agile/Sprints</span>
+                    <span class="tech-tag">Testing</span>
+                    <span class="tech-tag">Code Review</span>
+                    <span class="tech-tag">Problem Solving</span>
+                </div>
+                <div class="skill-description">
+                    Metodologías ágiles, validación de código y resolución estructurada de problemas técnicos.
+                </div>
+            </div>
+        </div>
+        
+        <div class="experience-summary">
+            <h2>📊 Resumen de Experiencia</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">12+</span>
+                    <span>Meses de Formación</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">328+</span>
+                    <span>Horas de Código</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span>Proyectos Completados</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span>Niveles Certificados</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem; text-align: center; color: #4a5568;">
+                <p><strong>Formación Práctica:</strong> Desde conceptos básicos hasta desarrollo Full Stack profesional</p>
+                <p><strong>Proyectos Reales:</strong> Soluciones implementadas para empresas reales con feedback de usuarios</p>
+                <p><strong>Metodología:</strong> Aprendizaje basado en proyectos con mentoría constante</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Animación de entrada para las tarjetas
+        const cards = document.querySelectorAll('.skill-card');
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(50px)';
+            
+            setTimeout(() => {
+                card.style.transition = 'all 0.6s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 200);
+        });
+        
+        // Efecto hover mejorado
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
